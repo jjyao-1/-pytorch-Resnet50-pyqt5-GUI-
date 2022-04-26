@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton___">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>390</y>
+      <width>106</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>开始识别</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label___2">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>160</y>
+      <width>90</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>识别结果：</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit___">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>160</y>
+      <width>159</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label___">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>70</y>
+      <width>224</width>
+      <height>224</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(211, 215, 207) ;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label___3">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>320</y>
+      <width>90</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>图像显示区</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton___2">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>390</y>
+      <width>141</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>返回登录界面</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label___4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>800</width>
+      <height>620</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton___1">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>390</y>
+      <width>221</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>更改图像显示区背景图片</string>
+    </property>
+   </widget>
+   <zorder>label___4</zorder>
+   <zorder>label___2</zorder>
+   <zorder>lineEdit___</zorder>
+   <zorder>label___</zorder>
+   <zorder>pushButton___</zorder>
+   <zorder>label___3</zorder>
+   <zorder>pushButton___2</zorder>
+   <zorder>pushButton___1</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFiles">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="action"/>
+   </widget>
+   <widget class="QMenu" name="menuSetting">
+    <property name="title">
+     <string>设置</string>
+    </property>
+    <widget class="QMenu" name="menu">
+     <property name="title">
+      <string>背景</string>
+     </property>
+     <addaction name="actionRed"/>
+     <addaction name="actionGreen"/>
+     <addaction name="actionBlack"/>
+     <addaction name="actionGray"/>
+     <addaction name="actionWhite"/>
+    </widget>
+    <widget class="QMenu" name="menu_3">
+     <property name="title">
+      <string>显示区背景颜色</string>
+     </property>
+     <addaction name="separator"/>
+     <addaction name="separator"/>
+     <addaction name="actionRed_2"/>
+     <addaction name="actionGreen_2"/>
+     <addaction name="actionGray_2"/>
+     <addaction name="actionBlack_2"/>
+     <addaction name="actionWhite_2"/>
+    </widget>
+    <addaction name="menu"/>
+    <addaction name="action_8"/>
+    <addaction name="separator"/>
+    <addaction name="menu_3"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="action_4"/>
+    <addaction name="action_5"/>
+    <addaction name="action_6"/>
+    <addaction name="action_7"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>信息</string>
+    </property>
+    <addaction name="action_3"/>
+   </widget>
+   <addaction name="menuFiles"/>
+   <addaction name="menuSetting"/>
+   <addaction name="menuHelp"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen">
+   <property name="text">
+    <string>打开</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>关闭</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="text">
+    <string>关于软件</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="text">
+    <string>帮助文档</string>
+   </property>
+  </action>
+  <action name="action_6">
+   <property name="text">
+    <string>源代码</string>
+   </property>
+  </action>
+  <action name="actionRed">
+   <property name="text">
+    <string>Red</string>
+   </property>
+  </action>
+  <action name="actionGreen">
+   <property name="text">
+    <string>Green</string>
+   </property>
+  </action>
+  <action name="actionBlack">
+   <property name="text">
+    <string>Black</string>
+   </property>
+  </action>
+  <action name="actionGray">
+   <property name="text">
+    <string>Gray</string>
+   </property>
+  </action>
+  <action name="action_7">
+   <property name="text">
+    <string>举报</string>
+   </property>
+  </action>
+  <action name="action_8">
+   <property name="text">
+    <string>自定义背景</string>
+   </property>
+  </action>
+  <action name="actionWhite">
+   <property name="text">
+    <string>White</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>用户列表</string>
+   </property>
+  </action>
+  <action name="actionRed_2">
+   <property name="text">
+    <string>Red</string>
+   </property>
+  </action>
+  <action name="actionGreen_2">
+   <property name="text">
+    <string>Green</string>
+   </property>
+  </action>
+  <action name="actionGray_2">
+   <property name="text">
+    <string>Gray</string>
+   </property>
+  </action>
+  <action name="actionBlack_2">
+   <property name="text">
+    <string>Black</string>
+   </property>
+  </action>
+  <action name="actionWhite_2">
+   <property name="text">
+    <string>White</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
